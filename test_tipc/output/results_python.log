@@ -1,0 +1,4 @@
+[33m Run successfully with command - python train.py --save_steps 400      --max_steps=6315           !  [0m
+[33m Run successfully with command - python tools/export_model.py --model_path=./convbert_base_outputs/best.pdparams --save_inference_dir ./convbert_infer      !  [0m
+[33m Run successfully with command - python deploy/inference_python/infer.py --model_dir ./convbert_infer --use_gpu=True               > ./test_tipc/output/python_infer_gpu_usetrt_null_precision_null_batchsize_null.log 2>&1 !  [0m
+[33m Run successfully with command - python deploy/inference_python/infer.py --model_dir ./convbert_infer --use_gpu=False --benchmark=False               > ./test_tipc/output/python_infer_cpu_usemkldnn_False_threads_null_precision_null_batchsize_null.log 2>&1 !  [0m

@@ -1,0 +1,5 @@
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+[37m---    fused 0 pairs of fc gru patterns[0m
+/home/yj/anaconda3/envs/yj/lib/python3.8/site-packages/paddlenlp/transformers/funnel/modeling.py:31: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Iterable
+text: the problem , it is with most of these things , is the script ., label_id: 0, prob: 0.9959195256233215
