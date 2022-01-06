@@ -1,0 +1,144 @@
+(yj) yj@DESKTOP-9QHSL6B:/mnt/c/Users/Yu/Desktop/DEBUGT5/ConvBERT_paddle/ConvBERT_paddle$ bash test_tipc/test_train_inference_python.sh test_tipc/configs/ConvBERT/train_infer_python.txt whole_train_whole_infer
+/mnt/c/Users/Yu/Desktop/DEBUGT5/ConvBERT_paddle/ConvBERT_paddle/paddlenlp/transformers/funnel/modeling.py:31: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Iterable
+-----------  Configuration Arguments -----------
+adam_epsilon: 1e-06
+batch_size: 32
+device: gpu
+layer_lr_decay: 0.8
+learning_rate: 0.0001
+logging_steps: 100
+max_seq_length: 128
+max_steps: 6315
+model_name_or_path: convbert-base
+model_type: convbert
+num_train_epochs: 3
+output_dir: ./convbert_base_outputs
+save_steps: 400
+scheduler_type: linear
+seed: 42
+task_name: sst-2
+warmup_proportion: 0.1
+warmup_steps: 0
+weight_decay: 0.01
+------------------------------------------------
+INFO:paddle.utils.download:unique_endpoints {''}
+[2022-01-06 14:43:27,445] [    INFO] - Already cached /home/yj/.paddlenlp/models/convbert-base/vocab.txt
+INFO:paddle.utils.download:unique_endpoints {''}
+[2022-01-06 14:43:27,458] [    INFO] - Already cached /home/yj/.paddlenlp/models/convbert-base/model_state.pdparams
+W0106 14:43:27.461691 16975 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 8.6, Driver API Version: 11.4, Runtime API Version: 11.2
+W0106 14:43:27.466214 16975 device_context.cc:465] device: 0, cuDNN Version: 8.2.
+[2022-01-06 14:43:30,543] [    INFO] - Weights of ConvBertForSequenceClassification not initialized from pretrained model: ['classifier.dense.weight', 'classifier.dense.bias', 'classifier.out_proj.weight', 'classifier.out_proj.bias']
+num_training_steps 6315
+global step 100/6315, epoch: 0, batch: 99, rank_id: 0, loss: 0.701987, lr: 0.0000158479, speed: 3.8838 step/s
+global step 200/6315, epoch: 0, batch: 199, rank_id: 0, loss: 0.236569, lr: 0.0000316957, speed: 4.1813 step/s
+global step 300/6315, epoch: 0, batch: 299, rank_id: 0, loss: 0.305141, lr: 0.0000475436, speed: 4.1681 step/s
+global step 400/6315, epoch: 0, batch: 399, rank_id: 0, loss: 0.205321, lr: 0.0000633914, speed: 4.1668 step/s
+eval loss: 0.439443, acc: 0.9059633027522935, 
+eval done total : 1.8497052192687988 s
+====================================================================================================
+global step 500/6315, epoch: 0, batch: 499, rank_id: 0, loss: 0.144417, lr: 0.0000792393, speed: 3.7846 step/s
+global step 600/6315, epoch: 0, batch: 599, rank_id: 0, loss: 0.189480, lr: 0.0000950872, speed: 4.2075 step/s
+global step 700/6315, epoch: 0, batch: 699, rank_id: 0, loss: 0.310209, lr: 0.0000987861, speed: 4.1484 step/s
+global step 800/6315, epoch: 0, batch: 799, rank_id: 0, loss: 0.261729, lr: 0.0000970267, speed: 4.1402 step/s
+eval loss: 0.301423, acc: 0.9311926605504587, 
+eval done total : 1.805617332458496 s
+====================================================================================================
+global step 900/6315, epoch: 0, batch: 899, rank_id: 0, loss: 0.119498, lr: 0.0000952674, speed: 3.7970 step/s
+global step 1000/6315, epoch: 0, batch: 999, rank_id: 0, loss: 0.172829, lr: 0.0000935081, speed: 4.3479 step/s
+global step 1100/6315, epoch: 0, batch: 1099, rank_id: 0, loss: 0.258570, lr: 0.0000917488, speed: 4.1755 step/s
+global step 1200/6315, epoch: 0, batch: 1199, rank_id: 0, loss: 0.158472, lr: 0.0000899894, speed: 4.2045 step/s
+eval loss: 0.400274, acc: 0.9288990825688074, 
+eval done total : 1.8947272300720215 s
+====================================================================================================
+global step 1300/6315, epoch: 0, batch: 1299, rank_id: 0, loss: 0.097155, lr: 0.0000882301, speed: 3.7856 step/s
+global step 1400/6315, epoch: 0, batch: 1399, rank_id: 0, loss: 0.173620, lr: 0.0000864708, speed: 4.1513 step/s
+global step 1500/6315, epoch: 0, batch: 1499, rank_id: 0, loss: 0.180419, lr: 0.0000847115, speed: 4.1369 step/s
+global step 1600/6315, epoch: 0, batch: 1599, rank_id: 0, loss: 0.109120, lr: 0.0000829521, speed: 4.1631 step/s
+eval loss: 0.343925, acc: 0.9334862385321101, 
+eval done total : 1.8011744022369385 s
+====================================================================================================
+global step 1700/6315, epoch: 0, batch: 1699, rank_id: 0, loss: 0.105563, lr: 0.0000811928, speed: 3.8281 step/s
+global step 1800/6315, epoch: 0, batch: 1799, rank_id: 0, loss: 0.197754, lr: 0.0000794335, speed: 4.2115 step/s
+global step 1900/6315, epoch: 0, batch: 1899, rank_id: 0, loss: 0.088878, lr: 0.0000776742, speed: 4.2135 step/s
+global step 2000/6315, epoch: 0, batch: 1999, rank_id: 0, loss: 0.185514, lr: 0.0000759148, speed: 4.1907 step/s
+eval loss: 0.342775, acc: 0.930045871559633, 
+eval done total : 1.8854179382324219 s
+====================================================================================================
+global step 2100/6315, epoch: 0, batch: 2099, rank_id: 0, loss: 0.158635, lr: 0.0000741555, speed: 3.8718 step/s
+global step 2200/6315, epoch: 1, batch: 94, rank_id: 0, loss: 0.182909, lr: 0.0000723962, speed: 4.0952 step/s
+global step 2300/6315, epoch: 1, batch: 194, rank_id: 0, loss: 0.050541, lr: 0.0000706369, speed: 4.1503 step/s
+global step 2400/6315, epoch: 1, batch: 294, rank_id: 0, loss: 0.085271, lr: 0.0000688776, speed: 4.1223 step/s
+eval loss: 0.325372, acc: 0.9380733944954128, 
+eval done total : 1.8667101860046387 s
+====================================================================================================
+global step 2500/6315, epoch: 1, batch: 394, rank_id: 0, loss: 0.140546, lr: 0.0000671182, speed: 3.7691 step/s
+global step 2600/6315, epoch: 1, batch: 494, rank_id: 0, loss: 0.062813, lr: 0.0000653589, speed: 4.1413 step/s
+global step 2700/6315, epoch: 1, batch: 594, rank_id: 0, loss: 0.051268, lr: 0.0000635996, speed: 4.1867 step/s
+global step 2800/6315, epoch: 1, batch: 694, rank_id: 0, loss: 0.133289, lr: 0.0000618403, speed: 4.1769 step/s
+eval loss: 0.342346, acc: 0.9461009174311926, 
+eval done total : 1.9056718349456787 s
+====================================================================================================
+global step 2900/6315, epoch: 1, batch: 794, rank_id: 0, loss: 0.081182, lr: 0.0000600809, speed: 3.7665 step/s
+global step 3000/6315, epoch: 1, batch: 894, rank_id: 0, loss: 0.037302, lr: 0.0000583216, speed: 4.0779 step/s
+global step 3100/6315, epoch: 1, batch: 994, rank_id: 0, loss: 0.102252, lr: 0.0000565623, speed: 4.0917 step/s
+global step 3200/6315, epoch: 1, batch: 1094, rank_id: 0, loss: 0.034153, lr: 0.0000548030, speed: 4.1898 step/s
+eval loss: 0.273624, acc: 0.9357798165137615, 
+eval done total : 1.8617076873779297 s
+====================================================================================================
+global step 3300/6315, epoch: 1, batch: 1194, rank_id: 0, loss: 0.050837, lr: 0.0000530436, speed: 3.8228 step/s
+global step 3400/6315, epoch: 1, batch: 1294, rank_id: 0, loss: 0.057483, lr: 0.0000512843, speed: 4.1557 step/s
+global step 3500/6315, epoch: 1, batch: 1394, rank_id: 0, loss: 0.017963, lr: 0.0000495250, speed: 4.1789 step/s
+global step 3600/6315, epoch: 1, batch: 1494, rank_id: 0, loss: 0.129254, lr: 0.0000477657, speed: 4.2023 step/s
+eval loss: 0.316170, acc: 0.9357798165137615, 
+eval done total : 1.80718994140625 s
+====================================================================================================
+global step 3700/6315, epoch: 1, batch: 1594, rank_id: 0, loss: 0.018828, lr: 0.0000460063, speed: 3.9090 step/s
+global step 3800/6315, epoch: 1, batch: 1694, rank_id: 0, loss: 0.172511, lr: 0.0000442470, speed: 4.0580 step/s
+global step 3900/6315, epoch: 1, batch: 1794, rank_id: 0, loss: 0.145175, lr: 0.0000424877, speed: 4.2329 step/s
+global step 4000/6315, epoch: 1, batch: 1894, rank_id: 0, loss: 0.054568, lr: 0.0000407284, speed: 4.1557 step/s
+eval loss: 0.245187, acc: 0.9426605504587156, 
+eval done total : 1.8232519626617432 s
+====================================================================================================
+global step 4100/6315, epoch: 1, batch: 1994, rank_id: 0, loss: 0.031694, lr: 0.0000389690, speed: 3.8723 step/s
+global step 4200/6315, epoch: 1, batch: 2094, rank_id: 0, loss: 0.021962, lr: 0.0000372097, speed: 4.2236 step/s
+global step 4300/6315, epoch: 2, batch: 89, rank_id: 0, loss: 0.029999, lr: 0.0000354504, speed: 4.3057 step/s
+global step 4400/6315, epoch: 2, batch: 189, rank_id: 0, loss: 0.092962, lr: 0.0000336911, speed: 4.1947 step/s
+eval loss: 0.336505, acc: 0.9369266055045872, 
+eval done total : 1.830653190612793 s
+====================================================================================================
+global step 4500/6315, epoch: 2, batch: 289, rank_id: 0, loss: 0.010416, lr: 0.0000319317, speed: 3.8942 step/s
+global step 4600/6315, epoch: 2, batch: 389, rank_id: 0, loss: 0.049958, lr: 0.0000301724, speed: 4.2250 step/s
+global step 4700/6315, epoch: 2, batch: 489, rank_id: 0, loss: 0.053692, lr: 0.0000284131, speed: 4.1712 step/s
+global step 4800/6315, epoch: 2, batch: 589, rank_id: 0, loss: 0.026260, lr: 0.0000266538, speed: 4.1828 step/s
+eval loss: 0.333143, acc: 0.9403669724770642, 
+eval done total : 1.9265234470367432 s
+====================================================================================================
+global step 4900/6315, epoch: 2, batch: 689, rank_id: 0, loss: 0.017495, lr: 0.0000248944, speed: 3.8814 step/s
+global step 5000/6315, epoch: 2, batch: 789, rank_id: 0, loss: 0.011139, lr: 0.0000231351, speed: 4.1152 step/s
+global step 5100/6315, epoch: 2, batch: 889, rank_id: 0, loss: 0.041769, lr: 0.0000213758, speed: 4.1514 step/s
+global step 5200/6315, epoch: 2, batch: 989, rank_id: 0, loss: 0.115673, lr: 0.0000196165, speed: 4.1319 step/s
+eval loss: 0.221091, acc: 0.9403669724770642, 
+eval done total : 1.8228094577789307 s
+====================================================================================================
+global step 5300/6315, epoch: 2, batch: 1089, rank_id: 0, loss: 0.131278, lr: 0.0000178571, speed: 3.8375 step/s
+global step 5400/6315, epoch: 2, batch: 1189, rank_id: 0, loss: 0.076617, lr: 0.0000160978, speed: 4.1903 step/s
+global step 5500/6315, epoch: 2, batch: 1289, rank_id: 0, loss: 0.197819, lr: 0.0000143385, speed: 4.1298 step/s
+global step 5600/6315, epoch: 2, batch: 1389, rank_id: 0, loss: 0.092925, lr: 0.0000125792, speed: 4.2243 step/s
+eval loss: 0.243368, acc: 0.9438073394495413, 
+eval done total : 1.885904312133789 s
+====================================================================================================
+global step 5700/6315, epoch: 2, batch: 1489, rank_id: 0, loss: 0.071801, lr: 0.0000108198, speed: 3.8423 step/s
+global step 5800/6315, epoch: 2, batch: 1589, rank_id: 0, loss: 0.117497, lr: 0.0000090605, speed: 4.1279 step/s
+global step 5900/6315, epoch: 2, batch: 1689, rank_id: 0, loss: 0.076053, lr: 0.0000073012, speed: 4.1924 step/s
+global step 6000/6315, epoch: 2, batch: 1789, rank_id: 0, loss: 0.065376, lr: 0.0000055419, speed: 4.1640 step/s
+eval loss: 0.257984, acc: 0.9380733944954128, 
+eval done total : 1.8824918270111084 s
+====================================================================================================
+global step 6100/6315, epoch: 2, batch: 1889, rank_id: 0, loss: 0.089857, lr: 0.0000037825, speed: 3.9718 step/s
+global step 6200/6315, epoch: 2, batch: 1989, rank_id: 0, loss: 0.020183, lr: 0.0000020232, speed: 4.1970 step/s
+global step 6300/6315, epoch: 2, batch: 2089, rank_id: 0, loss: 0.040875, lr: 0.0000002639, speed: 4.1889 step/s
+global step 6315/6315, epoch: 2, batch: 2104, rank_id: 0, loss: 0.013794, lr: 0.0000000000, speed: 27.5914 step/s
+eval loss: 0.251537, acc: 0.9392201834862385, 
+eval done total : 1.8502120971679688 s
+====================================================================================================

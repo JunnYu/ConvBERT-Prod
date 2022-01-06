@@ -1,0 +1,1 @@
+python deploy/inference_python/infer.py --model_dir=./convbert_infer/

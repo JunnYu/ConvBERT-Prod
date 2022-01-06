@@ -1,0 +1,18 @@
+===========================serving_params===========================
+model_name:ConvBERT
+python:python
+trans_model:-m paddle_serving_client.convert
+--dirname:./convbert_infer/
+--model_filename:inference.pdmodel
+--params_filename:inference.pdiparams
+--serving_server:./deploy/serving_python/convbert_server
+--serving_client:./deploy/serving_python/convbert_client
+serving_dir:./deploy/serving_python
+web_service:web_service.py
+op.convbert.local_service_conf.device_type:0
+null:null
+null:null
+null:null
+null:null
+pipline:pipeline_http_client.py
+null:null
